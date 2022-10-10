@@ -1,4 +1,4 @@
-function EventDetail() {
+function EventDetailPage() {
   return (
     <div>
       <h1>Here is event detail of id 2</h1>
@@ -6,4 +6,4 @@ function EventDetail() {
   );
 }
 
-export default EventDetail;
+export default EventDetailPage;

@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 
-function FilteredEvents() {
+function FilteredEventsPage() {
   const router = useRouter();
 
   console.log("aaa = ", router.query);
@@ -11,4 +11,4 @@ function FilteredEvents() {
   );
 }
 
-export default FilteredEvents;
+export default FilteredEventsPage;
