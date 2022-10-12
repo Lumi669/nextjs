@@ -4,6 +4,8 @@ import EventList from "../../components/events/event-list";
 import ResultsTitle from "../../components/events/results-title";
 import Button from "../../components/ui/button";
 
+import ErrorAlert from "../../components/ui/error-alert";
+
 function FilteredEventsPage() {
   const router = useRouter();
 
@@ -29,7 +31,9 @@ function FilteredEventsPage() {
   ) {
     return (
       <>
-        <p>Invalid filter. Please adjust your values</p>
+        <ErrorAlert>
+          <p>Invalid filter. Please adjust your values</p>
+        </ErrorAlert>
         <div className="center">
           <Button link="/events">Show All Events</Button>
         </div>
@@ -42,7 +46,9 @@ function FilteredEventsPage() {
   if (!filteredEvents || filteredEvents.length === 0) {
     return (
       <>
-        <p>No events found !</p>
+        <ErrorAlert>
+          <p>No events found !</p>
+        </ErrorAlert>
         <div className="center">
           <Button link="/events">Show All Events</Button>
         </div>
