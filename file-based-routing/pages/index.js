@@ -1,12 +1,14 @@
 import { getFeaturedEvents } from "../dummy-data";
 import EventList from "../components/events/event-list";
 
+import { Fragment } from "react";
+
 const Home = () => {
   const featuredEvents = getFeaturedEvents();
   return (
-    <div>
+    <Fragment>
       <EventList items={featuredEvents} />
-    </div>
+    </Fragment>
   );
 };
 
