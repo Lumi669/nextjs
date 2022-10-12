@@ -11,8 +11,8 @@ function EventSearch(props) {
     event.preventDefault();
     const selectedYear = yearElement.current?.value;
     const selectedMonth = monthElement.current?.value;
-    console.log("year = ", year);
-    console.log("month = ", month);
+    console.log("selectedYear = ", selectedYear);
+    console.log("selectedMonth = ", selectedMonth);
 
     props.onSearch(selectedYear, selectedMonth);
   }
